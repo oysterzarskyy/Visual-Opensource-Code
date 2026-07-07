@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>VOS SVG Preview</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: 'Frutiger', Arial, sans-serif;
+      background: #0f1720;
+      color: #e6eef0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0
+    }
+
+    .card {
+      width: 880px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    .row {
+      display: flex;
+      gap: 24px;
+      align-items: center
+    }
+
+    .tile {
+      width: 260px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .tile h3 {
+      margin: 8px 0 0 0;
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    svg {
+      width: 140px;
+      height: 140px
+    }
+
+    .mono svg {
+      color: #cfe5c7
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2 style="margin:0 0 12px 0">Visual Opensource — SVG Variants</h2>
+    <div class="row">
+      <div class="tile">
+        <object type="image/svg+xml" data="vos_allclrs.svg"></object>
+        <h3>All Colors</h3>
+      </div>
+      <div class="tile mono">
+      </div>
+      <div class="tile">
+        <object type="image/svg+xml" data="vos_aero.svg"></object>
+        <h3>Aero Frutiger</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
